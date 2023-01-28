@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>/home/bvn-ssd/Desktops/Desktop1/sin/sin2/sin_print_Form2.java</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<meta name="generator" content="Geany 1.29" />
+	<meta name="date" content="2023-01-27T00:56:48+0400" />
+	<style type="text/css">
+	body
+	{
+		font-family: Monospace, monospace;
+		font-size: 10pt;
+	}
+	.style_2
+	{
+		color: #008000;
+		background-color: #fefcf5;
+	}
+	.style_4
+	{
+		color: #ff8000;
+		background-color: #fefcf5;
+	}
+	.style_5
+	{
+		color: #0000ff;
+		background-color: #fefcf5;
+		font-weight: bold;
+	}
+	.style_6
+	{
+		color: #808080;
+		background-color: #fefcf5;
+	}
+	.style_10
+	{
+		color: #8000ff;
+		background-color: #fefcf5;
+	}
+	.style_11
+	{
+		color: #000080;
+		background-color: #fefcf5;
+	}
+	.style_16
+	{
+		color: #aa2c8c;
+		background-color: #fefcf5;
+		font-weight: bold;
+	}
+	.style_19
+	{
+		color: #0000ff;
+		background-color: #ffffff;
+	}
+
+	</style>
+</head>
+
+<body>
+<p>
+<br />
+<span class="style_2">//Вычисление&nbsp;величины&nbsp;Sin(x)</span><br />
+<br />
+&nbsp;<span class="style_5">package&nbsp;</span><span class="style_11">forms</span><span class="style_10">;</span><br />
+<br />
+<span class="style_5">public&nbsp;class&nbsp;</span><span class="style_19">sin_print_Form2&nbsp;</span><span class="style_5">extends&nbsp;</span><span class="style_19">Form2&nbsp;</span><span class="style_10">{</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">int&nbsp;</span><span class="style_11">a&nbsp;</span><span class="style_10">=&nbsp;-</span><span class="style_4">27</span><span class="style_10">;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">int&nbsp;</span><span class="style_11">a0&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">0</span><span class="style_10">;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">int&nbsp;</span><span class="style_11">i&nbsp;</span><span class="style_10">=&nbsp;-</span><span class="style_4">1</span><span class="style_10">;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">int&nbsp;</span><span class="style_11">a2&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">0</span><span class="style_10">;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">int&nbsp;</span><span class="style_11">da&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">27</span><span class="style_10">;&nbsp;</span><span class="style_2">//&nbsp;Интервал&nbsp;в&nbsp;градусах</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//&nbsp;Конструктор&nbsp;класса&nbsp;sin_print_Form2</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_19">sin_print_Form2</span><span class="style_10">()&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//&nbsp;Конструктор&nbsp;класса&nbsp;Form2</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">super</span><span class="style_10">(</span><span class="style_6">"Вычисление&nbsp;величины&nbsp;Sin(x)"</span><span class="style_10">,&nbsp;</span><span class="style_4">50</span><span class="style_10">,&nbsp;</span><span class="style_4">50</span><span class="style_10">,&nbsp;</span><span class="style_4">500</span><span class="style_10">,&nbsp;</span><span class="style_4">655</span><span class="style_10">);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+&nbsp;&nbsp;<span class="style_11">@Override</span><br />
+&nbsp;&nbsp;<span class="style_5">public&nbsp;</span><span class="style_16">void&nbsp;</span><span class="style_11">funs</span><span class="style_10">(){</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//-------------------------Ваш&nbsp;код----------------------------------------</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">clear</span><span class="style_10">();</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//код&nbsp;программы</span><br />
+<br />
+<br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//&nbsp;Начальный&nbsp;угол</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">if&nbsp;</span><span class="style_10">(</span><span class="style_11">i</span><span class="style_10">&lt;</span><span class="style_4">0</span><span class="style_10">)&nbsp;{</span><span class="style_11">a0&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_11">a&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_11">da</span><span class="style_10">;}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">else&nbsp;if&nbsp;</span><span class="style_10">(</span><span class="style_11">i</span><span class="style_10">&gt;=</span><span class="style_4">0</span><span class="style_10">)&nbsp;{</span><span class="style_11">a0&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_11">a2</span><span class="style_10">;}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">i</span><span class="style_10">++;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">a2&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_11">a0&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_11">da</span><span class="style_10">;&nbsp;</span><span class="style_2">//&nbsp;Конечный&nbsp;угол</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">double&nbsp;</span><span class="style_11">rad</span><span class="style_10">;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">int&nbsp;</span><span class="style_11">z&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">0</span><span class="style_10">;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_16">double&nbsp;</span><span class="style_11">y</span><span class="style_10">;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//&nbsp;создание&nbsp;отформатированной&nbsp;строки</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">String&nbsp;str0&nbsp;</span><span class="style_10">=&nbsp;&nbsp;</span><span class="style_11">String</span><span class="style_10">.</span><span class="style_11">format</span><span class="style_10">(</span><span class="style_6">"\nВычисление&nbsp;величины&nbsp;Sin(x)&nbsp;в&nbsp;пределах&nbsp;[%d,&nbsp;%d]&nbsp;градусов\n\n"</span><span class="style_10">,&nbsp;</span><span class="style_11">a0</span><span class="style_10">,&nbsp;</span><span class="style_11">a2</span><span class="style_10">);</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">add_text</span><span class="style_10">(</span><span class="style_11">str0</span><span class="style_10">);&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="style_2">//&nbsp;вывод&nbsp;информационной&nbsp;строки</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">while&nbsp;</span><span class="style_10">(</span><span class="style_11">a0</span><span class="style_10">&lt;=</span><span class="style_11">a2</span><span class="style_10">){</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">if&nbsp;</span><span class="style_10">(</span><span class="style_11">z&nbsp;</span><span class="style_10">&gt;&nbsp;</span><span class="style_4">9</span><span class="style_10">)&nbsp;{</span><span class="style_11">add_text</span><span class="style_10">(</span><span class="style_6">"\n"</span><span class="style_10">);&nbsp;</span><span class="style_11">z&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">0</span><span class="style_10">;}&nbsp;&nbsp;</span><span class="style_2">//&nbsp;пустая&nbsp;строка&nbsp;после&nbsp;10&nbsp;значений</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">rad&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_11">Math</span><span class="style_10">.</span><span class="style_11">toRadians</span><span class="style_10">(</span><span class="style_11">a0</span><span class="style_10">);&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="style_2">//перевод&nbsp;градусов&nbsp;в&nbsp;радианы</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">y&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_11">Math</span><span class="style_10">.</span><span class="style_11">sin</span><span class="style_10">(</span><span class="style_11">rad</span><span class="style_10">);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="style_2">//&nbsp;вычисление&nbsp;sin(x)</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">if&nbsp;</span><span class="style_10">(</span><span class="style_11">Math</span><span class="style_10">.</span><span class="style_11">abs</span><span class="style_10">(</span><span class="style_11">y</span><span class="style_10">)&lt;</span><span class="style_4">0.000001</span><span class="style_10">)&nbsp;{</span><span class="style_11">y&nbsp;</span><span class="style_10">=&nbsp;</span><span class="style_4">0</span><span class="style_10">;}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="style_2">//&nbsp;задать&nbsp;точность&nbsp;нуля</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">String&nbsp;str&nbsp;</span><span class="style_10">=&nbsp;&nbsp;</span><span class="style_11">String</span><span class="style_10">.</span><span class="style_11">format</span><span class="style_10">(</span><span class="style_6">"Sin("&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_11">a0&nbsp;</span><span class="style_10">+&nbsp;</span><span class="style_6">")&nbsp;=&nbsp;%.5f\n"</span><span class="style_10">,&nbsp;</span><span class="style_11">y</span><span class="style_10">);&nbsp;</span><span class="style_2">//&nbsp;создание&nbsp;отформатированной&nbsp;строки</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">add_text</span><span class="style_10">(</span><span class="style_11">str</span><span class="style_10">);&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="style_2">//&nbsp;вывод&nbsp;данных</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">a0</span><span class="style_10">++;&nbsp;&nbsp;&nbsp;</span><span class="style_2">//&nbsp;следующее&nbsp;число</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">z</span><span class="style_10">++;</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_2">//------------------------------------------------------------------------</span><br />
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">public&nbsp;static&nbsp;</span><span class="style_16">void&nbsp;</span><span class="style_11">main</span><span class="style_10">(</span><span class="style_11">String</span><span class="style_10">[]&nbsp;</span><span class="style_11">args</span><span class="style_10">)&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">javax</span><span class="style_10">.</span><span class="style_11">swing</span><span class="style_10">.</span><span class="style_11">SwingUtilities</span><span class="style_10">.</span><span class="style_11">invokeLater</span><span class="style_10">(</span><span class="style_5">new&nbsp;</span><span class="style_11">Runnable</span><span class="style_10">()&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_11">@Override</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">public&nbsp;</span><span class="style_16">void&nbsp;</span><span class="style_11">run</span><span class="style_10">()&nbsp;{</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_5">new&nbsp;</span><span class="style_19">sin_print_Form2</span><span class="style_10">();</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">});</span><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="style_10">}</span><br />
+<br />
+<span class="style_10">}</span><br />
+
+</p>
+</body>
+</html>
