@@ -1,2 +1,0 @@
-main-class: forms.sin_print_Form2
-
